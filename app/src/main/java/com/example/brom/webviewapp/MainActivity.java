@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
+
 
 public class MainActivity extends AppCompatActivity {
     // Create a private member variable that can hold our WebView
@@ -19,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        WebView wv = (WebView) findViewById(R.id.my_webview);
+        setContentView(wv);
+        wv.loadUrl("https://scio.se");
 
         // The FAB-code can be removed
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -40,7 +46,9 @@ public class MainActivity extends AppCompatActivity {
         android:layout_height="match_parent" />
         */
         // -- Commit and push to your github fork
+
         // 3. Locate the WebView element created in step 1 using the ID created in step 2
+
         // 4. Create a new WebViewClient to attach to our WebView. This allows us to
         //    browse the web inside our app.
         // -- Commit and push to your github fork
