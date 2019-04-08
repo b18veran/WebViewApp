@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(webView);
         WebSettings websettings = webView.getSettings();
         websettings.setJavaScriptEnabled(true);
-        webView.loadUrl("http://wwwlab.iit.his.se/b18veran/Mobilappdesign/App/App-Om.html");
+        //webView.loadUrl("http://wwwlab.iit.his.se/b18veran/Mobilappdesign/App/App-Om.html");
+        webView.loadUrl("file:///android_asset/about.html");
 
         // 1. Create a WebView element in the layout file content_main.xml
         // -- Commit and push to your github fork
