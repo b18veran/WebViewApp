@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 
@@ -23,9 +24,12 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         WebView webView = new WebView(this);
+        //Dessa gör att det går att klicka på appen.
         setContentView(webView);
-        webView.loadUrl("http://wwwlab.iit.his.se/b18veran/Mobilappdesign/App/App.html");
-        
+        WebSettings websettings = webView.getSettings();
+        websettings.setJavaScriptEnabled(true);
+        webView.loadUrl("http://wwwlab.iit.his.se/b18veran/Mobilappdesign/App/App-Om.html");
+
         // 1. Create a WebView element in the layout file content_main.xml
         // -- Commit and push to your github fork
         // 2. Give the WebView element created in step 1 ID "my_webview"
