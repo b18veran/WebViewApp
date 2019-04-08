@@ -10,7 +10,7 @@
 
     <!-- The TextView element can be replaced by a WebView element -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/my_webview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TJENA BROR!"
@@ -22,6 +22,7 @@
         app:layout_constraintVertical_bias="0.335" />
 
     <WebView
+        android:id="@+id/webviews"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
