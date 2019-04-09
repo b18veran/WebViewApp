@@ -12,6 +12,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 
+
 public class MainActivity extends AppCompatActivity {
     // Create a private member variable that can hold our WebView
    // WebView webView = new WebView(this);
@@ -71,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         //Om man trycker på knappen extern är det hit man skickas alltså till en hemsida.
         if (id == R.id.action_settings) {
-            webview.loadUrl("http://wwwlab.iit.his.se/b18veran/Mobilappdesign/App/App-Om.html");
+            webview.loadUrl("http://wwwlab.iit.his.se/b18veran/Mobilappdesign/App/App-Juice.html");
             return true;
         }
         //Om man trycker på knappen intern är det hit vi kommer alltså till den iterna html sidan.
