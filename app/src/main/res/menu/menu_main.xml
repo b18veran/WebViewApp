@@ -2,14 +2,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.brom.webviewapp.MainActivity">
+    //Här är de knapparna som kommer upp vid tryck på de tre prickarna i menyn.
+    //Detta är för den externa sidan.
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="Extern"
         app:showAsAction="never" />
+    //Detta är för den interna sidan.
     <item
         android:id="@+id/action_setting"
         android:orderInCategory="100"
-        android:title="intern"
+        android:title="Intern"
         app:showAsAction="never" />
 </menu>

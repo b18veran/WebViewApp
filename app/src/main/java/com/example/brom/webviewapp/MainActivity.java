@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         webview = findViewById(R.id.webviews);
 
         //Dessa gör att det går att klicka på appen.
-       // setContentView(webView);
+       //Kommenterat bort!
+        // setContentView(webView);
         WebSettings websettings = webview.getSettings();
         websettings.setJavaScriptEnabled(true);
         //webView.loadUrl("http://wwwlab.iit.his.se/b18veran/Mobilappdesign/App/App-Om.html");
@@ -68,10 +69,12 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        //Om man trycker på knappen extern är det hit man skickas alltså till en hemsida.
         if (id == R.id.action_settings) {
             webview.loadUrl("http://wwwlab.iit.his.se/b18veran/Mobilappdesign/App/App-Om.html");
             return true;
         }
+        //Om man trycker på knappen intern är det hit vi kommer alltså till den iterna html sidan.
         if (id == R.id.action_setting) {
             webview.loadUrl("file:///android_asset/about.html");
             return true;
