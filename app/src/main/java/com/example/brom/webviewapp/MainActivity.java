@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
         webview = findViewById(R.id.webviews);
 
         //Dessa gör att det går att klicka på appen.
-       //Kommenterat bort!
-        // setContentView(webView);
+       //Kommenterat bort! setContentView(webView);
         WebSettings websettings = webview.getSettings();
         websettings.setJavaScriptEnabled(true);
         //webView.loadUrl("http://wwwlab.iit.his.se/b18veran/Mobilappdesign/App/App-Om.html");
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         // -- Commit and push to your github fork
         // 2. Give the WebView element created in step 1 ID "my_webview"
         // Enter your code that creates your WebView here...
-        /*
+        /* Här är koden som skapar webview.
         <WebView
         android:id="@+id/my_webview"
         android:layout_width="match_parent"
